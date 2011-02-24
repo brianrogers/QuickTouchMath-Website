@@ -1,0 +1,84 @@
+<html> 
+  <head>
+    <title>QuickTouchMath - Sign In</title> 
+	<meta name = "viewport" content = "width = device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="/style/qtm-game.css" type="text/css" media="screen" charset="utf-8">
+    <script src="/scripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+
+	function PlayGame(key){
+		//console.log('redirecting to : ' + '/playgame/'+key);
+		window.document.location = '/playqtm/'+key;
+	}
+	
+	$(document).ready(function(){
+		//console.log("playername="+$("#playername").val()+"&password="+$("#password").val());
+			
+		$("#signinbutton").click(function(){
+			$.ajax({
+			            type: "POST",
+			            url: "/actions/signin",
+						data: "playername="+$("#playername").val()+"&password="+$("#password").val(),
+			            //dataType: ($.browser.msie) ? "text/xml" : "xml",
+			            success: function(xml) {
+							//alert('LOADED : ' + xml);
+							//console.log($(xml).text());
+							if($(xml).text() == 'False'){
+								//console.log('returned false');
+								$("#playername").val('');
+								$("#password").val('');
+							}else{
+								//console.log($(xml).text());
+								PlayGame($(xml).text());
+							}
+			            },
+						error: function(err1,err2,err3,err4) {
+							//console.log('false');
+							//console.log('error : ' + err1 + ' *** ' + err2 + ' *** ' + err3 + ' *** ' + err4);
+						}
+			        });
+		});
+		
+		$("#newplayerbutton").click(function(){
+			window.document.location = "/newplayer";
+		});
+	
+		$("#qtmbutton").click(function(){
+			window.document.location = "/";
+		});
+	
+		$("#gotosignin").click(function(){
+			$('#signinsplash').hide();
+			$('#signinentry').show();
+		});
+		
+		$("#gotonewplayer").click(function(){
+			window.document.location = '/newplayer';
+		});
+	
+		//startup with the splash and hide the entry
+		$('#signinsplash').show();
+		$('#signinentry').hide();
+	
+	});
+	</script>
+  </head>
+  <body> 
+	<div id="signinform">
+		<div id="qtmbutton"></div>
+		<div id="signinsplash">
+			<div id="gotosignin">I have a PlayerName<br>and Password</div>
+			<div id="gotonewplayer">I have never played online<br>(or forgot my password)</div>
+		</div>
+		<div id="signinentry">
+			<div id="playerlabel">Player Name:</div>
+			<input type="text" id="playername" value=""><br>
+			<div id="passwordlabel">Password:</div>
+			<input type="password" id="password" value="">
+			<div id="signinbutton">Sign In</div>
+			<div id="newplayerbutton">New Player</div>
+		</div>
+	</div>
+  </body>
+</html>

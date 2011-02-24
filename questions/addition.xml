@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<addition> 
+	<questions> 
+		<question> 
+			<string>0+0</string> 
+			<string>0 + 0</string> 
+			<string>0</string> 
+			<string>1</string> 
+			<string>2</string> 
+			<string>3</string> 
+			<string>0</string> 
+		</question> 
+		<question> 
+			<string>0+1</string> 
+			<string>0 + 1</string> 
+			<string>1</string> 
+			<string>2</string> 
+			<string>3</string> 
+			<string>0</string> 
+			<string>1</string> 
+		</question> 
+		<question> 
+			<string>0+2</string> 
+			<string>0 + 2</string> 
+			<string>2</string> 
+			<string>3</string> 
+			<string>4</string> 
+			<string>1</string> 
+			<string>2</string> 
+		</question> 
+		<question> 
+			<string>0+3</string> 
+			<string>0 + 3</string> 
+			<string>3</string> 
+			<string>4</string> 
+			<string>5</string> 
+			<string>2</string> 
+			<string>3</string> 
+		</question> 
+		<question> 
+			<string>0+4</string> 
+			<string>0 + 4</string> 
+			<string>4</string> 
+			<string>5</string> 
+			<string>6</string> 
+			<string>3</string> 
+			<string>4</string> 
+		</question> 
+		<question> 
+			<string>0+5</string> 
+			<string>0 + 5</string> 
+			<string>5</string> 
+			<string>6</string> 
+			<string>7</string> 
+			<string>4</string> 
+			<string>5</string> 
+		</question> 
+		<question> 
+			<string>0+6</string> 
+			<string>0 + 6</string> 
+			<string>6</string> 
+			<string>7</string> 
+			<string>8</string> 
+			<string>5</string> 
+			<string>6</string> 
+		</question> 
+		<question> 
+			<string>0+7</string> 
+			<string>0 + 7</string> 
+			<string>7</string> 
+			<string>8</string> 
+			<string>9</string> 
+			<string>6</string> 
+			<string>7</string> 
+		</question> 
+		<question> 
+			<string>0+8</string> 
+			<string>0 + 8</string> 
+			<string>8</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>7</string> 
+			<string>8</string> 
+		</question> 
+		<question> 
+			<string>0+9</string> 
+			<string>0 + 9</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>8</string> 
+			<string>9</string> 
+		</question> 
+		<question> 
+			<string>0+10</string> 
+			<string>0 + 10</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>9</string> 
+			<string>10</string> 
+		</question> 
+		<question> 
+			<string>0+11</string> 
+			<string>0 + 11</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>10</string> 
+			<string>11</string> 
+		</question> 
+		<question> 
+			<string>0+12</string> 
+			<string>0 + 12</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>11</string> 
+			<string>12</string> 
+		</question> 
+		<question> 
+			<string>1+1</string> 
+			<string>1 + 1</string> 
+			<string>2</string> 
+			<string>3</string> 
+			<string>4</string> 
+			<string>1</string> 
+			<string>2</string> 
+		</question> 
+		<question> 
+			<string>1+2</string> 
+			<string>1 + 2</string> 
+			<string>3</string> 
+			<string>4</string> 
+			<string>5</string> 
+			<string>2</string> 
+			<string>3</string> 
+		</question> 
+		<question> 
+			<string>1+3</string> 
+			<string>1 + 3</string> 
+			<string>4</string> 
+			<string>5</string> 
+			<string>6</string> 
+			<string>3</string> 
+			<string>4</string> 
+		</question> 
+		<question> 
+			<string>1+4</string> 
+			<string>1 + 4</string> 
+			<string>5</string> 
+			<string>6</string> 
+			<string>7</string> 
+			<string>4</string> 
+			<string>5</string> 
+		</question> 
+		<question> 
+			<string>1+5</string> 
+			<string>1 + 5</string> 
+			<string>6</string> 
+			<string>7</string> 
+			<string>8</string> 
+			<string>5</string> 
+			<string>6</string> 
+		</question> 
+		<question> 
+			<string>1+6</string> 
+			<string>1 + 6</string> 
+			<string>7</string> 
+			<string>8</string> 
+			<string>9</string> 
+			<string>6</string> 
+			<string>7</string> 
+		</question> 
+		<question> 
+			<string>1+7</string> 
+			<string>1 + 7</string> 
+			<string>8</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>7</string> 
+			<string>8</string> 
+		</question> 
+		<question> 
+			<string>1+8</string> 
+			<string>1 + 8</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>8</string> 
+			<string>9</string> 
+		</question> 
+		<question> 
+			<string>1+9</string> 
+			<string>1 + 9</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>9</string> 
+			<string>10</string> 
+		</question> 
+		<question> 
+			<string>1+10</string> 
+			<string>1 + 10</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>10</string> 
+			<string>11</string> 
+		</question> 
+		<question> 
+			<string>1+11</string> 
+			<string>1 + 11</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>11</string> 
+			<string>12</string> 
+		</question> 
+		<question> 
+			<string>1+12</string> 
+			<string>1 + 12</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>12</string> 
+			<string>13</string> 
+		</question> 
+		<question> 
+			<string>2+0</string> 
+			<string>2 + 0</string> 
+			<string>2</string> 
+			<string>3</string> 
+			<string>4</string> 
+			<string>1</string> 
+			<string>2</string> 
+		</question> 
+		<question> 
+			<string>2+1</string> 
+			<string>2 + 1</string> 
+			<string>3</string> 
+			<string>4</string> 
+			<string>5</string> 
+			<string>2</string> 
+			<string>3</string> 
+		</question> 
+		<question> 
+			<string>2+2</string> 
+			<string>2 + 2</string> 
+			<string>4</string> 
+			<string>5</string> 
+			<string>6</string> 
+			<string>3</string> 
+			<string>4</string> 
+		</question> 
+		<question> 
+			<string>2+3</string> 
+			<string>2 + 3</string> 
+			<string>5</string> 
+			<string>6</string> 
+			<string>7</string> 
+			<string>4</string> 
+			<string>5</string> 
+		</question> 
+		<question> 
+			<string>2+4</string> 
+			<string>2 + 4</string> 
+			<string>6</string> 
+			<string>7</string> 
+			<string>8</string> 
+			<string>5</string> 
+			<string>6</string> 
+		</question> 
+		<question> 
+			<string>2+5</string> 
+			<string>2 + 5</string> 
+			<string>7</string> 
+			<string>8</string> 
+			<string>9</string> 
+			<string>6</string> 
+			<string>7</string> 
+		</question> 
+		<question> 
+			<string>2+6</string> 
+			<string>2 + 6</string> 
+			<string>8</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>7</string> 
+			<string>8</string> 
+		</question> 
+		<question> 
+			<string>2+7</string> 
+			<string>2 + 7</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>8</string> 
+			<string>9</string> 
+		</question> 
+		<question> 
+			<string>2+8</string> 
+			<string>2 + 8</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>9</string> 
+			<string>10</string> 
+		</question> 
+		<question> 
+			<string>2+9</string> 
+			<string>2 + 9</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>10</string> 
+			<string>11</string> 
+		</question> 
+		<question> 
+			<string>2+10</string> 
+			<string>2 + 10</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>11</string> 
+			<string>12</string> 
+		</question> 
+		<question> 
+			<string>2+11</string> 
+			<string>2 + 11</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>12</string> 
+			<string>13</string> 
+		</question> 
+		<question> 
+			<string>2+12</string> 
+			<string>2 + 12</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>13</string> 
+			<string>14</string> 
+		</question> 
+		<question> 
+			<string>3+1</string> 
+			<string>3 + 1</string> 
+			<string>4</string> 
+			<string>5</string> 
+			<string>6</string> 
+			<string>3</string> 
+			<string>4</string> 
+		</question> 
+		<question> 
+			<string>3+2</string> 
+			<string>3 + 2</string> 
+			<string>5</string> 
+			<string>6</string> 
+			<string>7</string> 
+			<string>4</string> 
+			<string>5</string> 
+		</question> 
+		<question> 
+			<string>3+3</string> 
+			<string>3 + 3</string> 
+			<string>6</string> 
+			<string>7</string> 
+			<string>8</string> 
+			<string>5</string> 
+			<string>6</string> 
+		</question> 
+		<question> 
+			<string>3+4</string> 
+			<string>3 + 4</string> 
+			<string>7</string> 
+			<string>8</string> 
+			<string>9</string> 
+			<string>6</string> 
+			<string>7</string> 
+		</question> 
+		<question> 
+			<string>3+5</string> 
+			<string>3 + 5</string> 
+			<string>8</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>7</string> 
+			<string>8</string> 
+		</question> 
+		<question> 
+			<string>3+6</string> 
+			<string>3 + 6</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>8</string> 
+			<string>9</string> 
+		</question> 
+		<question> 
+			<string>3+7</string> 
+			<string>3 + 7</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>9</string> 
+			<string>10</string> 
+		</question> 
+		<question> 
+			<string>3+8</string> 
+			<string>3 + 8</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>10</string> 
+			<string>11</string> 
+		</question> 
+		<question> 
+			<string>3+9</string> 
+			<string>3 + 9</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>11</string> 
+			<string>12</string> 
+		</question> 
+		<question> 
+			<string>3+10</string> 
+			<string>3 + 10</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>12</string> 
+			<string>13</string> 
+		</question> 
+		<question> 
+			<string>3+11</string> 
+			<string>3 + 11</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>13</string> 
+			<string>14</string> 
+		</question> 
+		<question> 
+			<string>3+12</string> 
+			<string>3 + 12</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>14</string> 
+			<string>15</string> 
+		</question> 
+		<question> 
+			<string>4+0</string> 
+			<string>4 + 0</string> 
+			<string>4</string> 
+			<string>5</string> 
+			<string>6</string> 
+			<string>3</string> 
+			<string>4</string> 
+		</question> 
+		<question> 
+			<string>4+1</string> 
+			<string>4 + 1</string> 
+			<string>5</string> 
+			<string>6</string> 
+			<string>7</string> 
+			<string>4</string> 
+			<string>5</string> 
+		</question> 
+		<question> 
+			<string>4+2</string> 
+			<string>4 + 2</string> 
+			<string>6</string> 
+			<string>7</string> 
+			<string>8</string> 
+			<string>5</string> 
+			<string>6</string> 
+		</question> 
+		<question> 
+			<string>4+3</string> 
+			<string>4 + 3</string> 
+			<string>7</string> 
+			<string>8</string> 
+			<string>9</string> 
+			<string>6</string> 
+			<string>7</string> 
+		</question> 
+		<question> 
+			<string>4+4</string> 
+			<string>4 + 4</string> 
+			<string>8</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>7</string> 
+			<string>8</string> 
+		</question> 
+		<question> 
+			<string>4+5</string> 
+			<string>4 + 5</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>8</string> 
+			<string>9</string> 
+		</question> 
+		<question> 
+			<string>4+6</string> 
+			<string>4 + 6</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>9</string> 
+			<string>10</string> 
+		</question> 
+		<question> 
+			<string>4+7</string> 
+			<string>4 + 7</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>10</string> 
+			<string>11</string> 
+		</question> 
+		<question> 
+			<string>4+8</string> 
+			<string>4 + 8</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>11</string> 
+			<string>12</string> 
+		</question> 
+		<question> 
+			<string>4+9</string> 
+			<string>4 + 9</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>12</string> 
+			<string>13</string> 
+		</question> 
+		<question> 
+			<string>4+10</string> 
+			<string>4 + 10</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>13</string> 
+			<string>14</string> 
+		</question> 
+		<question> 
+			<string>4+11</string> 
+			<string>4 + 11</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>14</string> 
+			<string>15</string> 
+		</question> 
+		<question> 
+			<string>4+12</string> 
+			<string>4 + 12</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>18</string> 
+			<string>15</string> 
+			<string>16</string> 
+		</question> 
+		<question> 
+			<string>5+0</string> 
+			<string>5 + 0</string> 
+			<string>5</string> 
+			<string>6</string> 
+			<string>7</string> 
+			<string>4</string> 
+			<string>5</string> 
+		</question> 
+		<question> 
+			<string>5+1</string> 
+			<string>5 + 1</string> 
+			<string>6</string> 
+			<string>7</string> 
+			<string>8</string> 
+			<string>5</string> 
+			<string>6</string> 
+		</question> 
+		<question> 
+			<string>5+2</string> 
+			<string>5 + 2</string> 
+			<string>7</string> 
+			<string>8</string> 
+			<string>9</string> 
+			<string>6</string> 
+			<string>7</string> 
+		</question> 
+		<question> 
+			<string>5+3</string> 
+			<string>5 + 3</string> 
+			<string>8</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>7</string> 
+			<string>8</string> 
+		</question> 
+		<question> 
+			<string>5+4</string> 
+			<string>5 + 4</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>8</string> 
+			<string>9</string> 
+		</question> 
+		<question> 
+			<string>5+5</string> 
+			<string>5 + 5</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>9</string> 
+			<string>10</string> 
+		</question> 
+		<question> 
+			<string>5+6</string> 
+			<string>5 + 6</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>10</string> 
+			<string>11</string> 
+		</question> 
+		<question> 
+			<string>5+7</string> 
+			<string>5 + 7</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>11</string> 
+			<string>12</string> 
+		</question> 
+		<question> 
+			<string>5+8</string> 
+			<string>5 + 8</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>12</string> 
+			<string>13</string> 
+		</question> 
+		<question> 
+			<string>5+9</string> 
+			<string>5 + 9</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>13</string> 
+			<string>14</string> 
+		</question> 
+		<question> 
+			<string>5+10</string> 
+			<string>5 + 10</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>14</string> 
+			<string>15</string> 
+		</question> 
+		<question> 
+			<string>5+11</string> 
+			<string>5 + 11</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>18</string> 
+			<string>15</string> 
+			<string>16</string> 
+		</question> 
+		<question> 
+			<string>5+12</string> 
+			<string>5 + 12</string> 
+			<string>17</string> 
+			<string>18</string> 
+			<string>19</string> 
+			<string>16</string> 
+			<string>17</string> 
+		</question> 
+		<question> 
+			<string>6+0</string> 
+			<string>6 + 0</string> 
+			<string>6</string> 
+			<string>7</string> 
+			<string>8</string> 
+			<string>5</string> 
+			<string>6</string> 
+		</question> 
+		<question> 
+			<string>6+1</string> 
+			<string>6 + 1</string> 
+			<string>7</string> 
+			<string>8</string> 
+			<string>9</string> 
+			<string>6</string> 
+			<string>7</string> 
+		</question> 
+		<question> 
+			<string>6+2</string> 
+			<string>6 + 2</string> 
+			<string>8</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>7</string> 
+			<string>8</string> 
+		</question> 
+		<question> 
+			<string>6+3</string> 
+			<string>6 + 3</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>8</string> 
+			<string>9</string> 
+		</question> 
+		<question> 
+			<string>6+4</string> 
+			<string>6 + 4</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>9</string> 
+			<string>10</string> 
+		</question> 
+		<question> 
+			<string>6+5</string> 
+			<string>6 + 5</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>10</string> 
+			<string>11</string> 
+		</question> 
+		<question> 
+			<string>6+6</string> 
+			<string>6 + 6</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>11</string> 
+			<string>12</string> 
+		</question> 
+		<question> 
+			<string>6+7</string> 
+			<string>6 + 7</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>12</string> 
+			<string>13</string> 
+		</question> 
+		<question> 
+			<string>6+8</string> 
+			<string>6 + 8</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>13</string> 
+			<string>14</string> 
+		</question> 
+		<question> 
+			<string>6+9</string> 
+			<string>6 + 9</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>14</string> 
+			<string>15</string> 
+		</question> 
+		<question> 
+			<string>6+10</string> 
+			<string>6 + 10</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>18</string> 
+			<string>15</string> 
+			<string>16</string> 
+		</question> 
+		<question> 
+			<string>6+11</string> 
+			<string>6 + 11</string> 
+			<string>17</string> 
+			<string>18</string> 
+			<string>19</string> 
+			<string>16</string> 
+			<string>17</string> 
+		</question> 
+		<question> 
+			<string>6+12</string> 
+			<string>6 + 12</string> 
+			<string>18</string> 
+			<string>19</string> 
+			<string>20</string> 
+			<string>17</string> 
+			<string>18</string> 
+		</question> 
+		<question> 
+			<string>7+0</string> 
+			<string>7 + 0</string> 
+			<string>7</string> 
+			<string>8</string> 
+			<string>9</string> 
+			<string>6</string> 
+			<string>7</string> 
+		</question> 
+		<question> 
+			<string>7+1</string> 
+			<string>7 + 1</string> 
+			<string>8</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>7</string> 
+			<string>8</string> 
+		</question> 
+		<question> 
+			<string>7+2</string> 
+			<string>7 + 2</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>8</string> 
+			<string>9</string> 
+		</question> 
+		<question> 
+			<string>7+3</string> 
+			<string>7 + 3</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>9</string> 
+			<string>10</string> 
+		</question> 
+		<question> 
+			<string>7+4</string> 
+			<string>7 + 4</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>10</string> 
+			<string>11</string> 
+		</question> 
+		<question> 
+			<string>7+5</string> 
+			<string>7 + 5</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>11</string> 
+			<string>12</string> 
+		</question> 
+		<question> 
+			<string>7+6</string> 
+			<string>7 + 6</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>12</string> 
+			<string>13</string> 
+		</question> 
+		<question> 
+			<string>7+7</string> 
+			<string>7 + 7</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>13</string> 
+			<string>14</string> 
+		</question> 
+		<question> 
+			<string>7+8</string> 
+			<string>7 + 8</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>14</string> 
+			<string>15</string> 
+		</question> 
+		<question> 
+			<string>7+9</string> 
+			<string>7 + 9</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>18</string> 
+			<string>15</string> 
+			<string>16</string> 
+		</question> 
+		<question> 
+			<string>7+10</string> 
+			<string>7 + 10</string> 
+			<string>17</string> 
+			<string>18</string> 
+			<string>19</string> 
+			<string>16</string> 
+			<string>17</string> 
+		</question> 
+		<question> 
+			<string>7+11</string> 
+			<string>7 + 11</string> 
+			<string>18</string> 
+			<string>19</string> 
+			<string>20</string> 
+			<string>17</string> 
+			<string>18</string> 
+		</question> 
+		<question> 
+			<string>7+12</string> 
+			<string>7 + 12</string> 
+			<string>19</string> 
+			<string>20</string> 
+			<string>21</string> 
+			<string>18</string> 
+			<string>19</string> 
+		</question> 
+		<question> 
+			<string>8+0</string> 
+			<string>8 + 0</string> 
+			<string>8</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>7</string> 
+			<string>8</string> 
+		</question> 
+		<question> 
+			<string>8+1</string> 
+			<string>8 + 1</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>8</string> 
+			<string>9</string> 
+		</question> 
+		<question> 
+			<string>8+2</string> 
+			<string>8 + 2</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>9</string> 
+			<string>10</string> 
+		</question> 
+		<question> 
+			<string>8+3</string> 
+			<string>8 + 3</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>10</string> 
+			<string>11</string> 
+		</question> 
+		<question> 
+			<string>8+4</string> 
+			<string>8 + 4</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>11</string> 
+			<string>12</string> 
+		</question> 
+		<question> 
+			<string>8+5</string> 
+			<string>8 + 5</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>12</string> 
+			<string>13</string> 
+		</question> 
+		<question> 
+			<string>8+6</string> 
+			<string>8 + 6</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>13</string> 
+			<string>14</string> 
+		</question> 
+		<question> 
+			<string>8+7</string> 
+			<string>8 + 7</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>14</string> 
+			<string>15</string> 
+		</question> 
+		<question> 
+			<string>8+8</string> 
+			<string>8 + 8</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>18</string> 
+			<string>15</string> 
+			<string>16</string> 
+		</question> 
+		<question> 
+			<string>8+9</string> 
+			<string>8 + 9</string> 
+			<string>17</string> 
+			<string>18</string> 
+			<string>19</string> 
+			<string>16</string> 
+			<string>17</string> 
+		</question> 
+		<question> 
+			<string>8+10</string> 
+			<string>8 + 10</string> 
+			<string>18</string> 
+			<string>19</string> 
+			<string>20</string> 
+			<string>17</string> 
+			<string>18</string> 
+		</question> 
+		<question> 
+			<string>8+11</string> 
+			<string>8 + 11</string> 
+			<string>19</string> 
+			<string>20</string> 
+			<string>21</string> 
+			<string>18</string> 
+			<string>19</string> 
+		</question> 
+		<question> 
+			<string>8+12</string> 
+			<string>8 + 12</string> 
+			<string>20</string> 
+			<string>21</string> 
+			<string>22</string> 
+			<string>19</string> 
+			<string>20</string> 
+		</question> 
+		<question> 
+			<string>9+0</string> 
+			<string>9 + 0</string> 
+			<string>9</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>8</string> 
+			<string>9</string> 
+		</question> 
+		<question> 
+			<string>9+1</string> 
+			<string>9 + 1</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>9</string> 
+			<string>10</string> 
+		</question> 
+		<question> 
+			<string>9+2</string> 
+			<string>9 + 2</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>10</string> 
+			<string>11</string> 
+		</question> 
+		<question> 
+			<string>9+3</string> 
+			<string>9 + 3</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>11</string> 
+			<string>12</string> 
+		</question> 
+		<question> 
+			<string>9+4</string> 
+			<string>9 + 4</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>12</string> 
+			<string>13</string> 
+		</question> 
+		<question> 
+			<string>9+5</string> 
+			<string>9 + 5</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>13</string> 
+			<string>14</string> 
+		</question> 
+		<question> 
+			<string>9+6</string> 
+			<string>9 + 6</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>14</string> 
+			<string>15</string> 
+		</question> 
+		<question> 
+			<string>9+7</string> 
+			<string>9 + 7</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>18</string> 
+			<string>15</string> 
+			<string>16</string> 
+		</question> 
+		<question> 
+			<string>9+8</string> 
+			<string>9 + 8</string> 
+			<string>17</string> 
+			<string>18</string> 
+			<string>19</string> 
+			<string>16</string> 
+			<string>17</string> 
+		</question> 
+		<question> 
+			<string>9+9</string> 
+			<string>9 + 9</string> 
+			<string>18</string> 
+			<string>19</string> 
+			<string>20</string> 
+			<string>17</string> 
+			<string>18</string> 
+		</question> 
+		<question> 
+			<string>9+10</string> 
+			<string>9 + 10</string> 
+			<string>19</string> 
+			<string>20</string> 
+			<string>21</string> 
+			<string>18</string> 
+			<string>19</string> 
+		</question> 
+		<question> 
+			<string>9+11</string> 
+			<string>9 + 11</string> 
+			<string>20</string> 
+			<string>21</string> 
+			<string>22</string> 
+			<string>19</string> 
+			<string>20</string> 
+		</question> 
+		<question> 
+			<string>9+12</string> 
+			<string>9 + 12</string> 
+			<string>21</string> 
+			<string>22</string> 
+			<string>23</string> 
+			<string>20</string> 
+			<string>21</string> 
+		</question> 
+		<question> 
+			<string>10+0</string> 
+			<string>10 + 0</string> 
+			<string>10</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>9</string> 
+			<string>10</string> 
+		</question> 
+		<question> 
+			<string>10+1</string> 
+			<string>10 + 1</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>10</string> 
+			<string>11</string> 
+		</question> 
+		<question> 
+			<string>10+2</string> 
+			<string>10 + 2</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>11</string> 
+			<string>12</string> 
+		</question> 
+		<question> 
+			<string>10+3</string> 
+			<string>10 + 3</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>12</string> 
+			<string>13</string> 
+		</question> 
+		<question> 
+			<string>10+4</string> 
+			<string>10 + 4</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>13</string> 
+			<string>14</string> 
+		</question> 
+		<question> 
+			<string>10+5</string> 
+			<string>10 + 5</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>14</string> 
+			<string>15</string> 
+		</question> 
+		<question> 
+			<string>10+6</string> 
+			<string>10 + 6</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>18</string> 
+			<string>15</string> 
+			<string>16</string> 
+		</question> 
+		<question> 
+			<string>10+7</string> 
+			<string>10 + 7</string> 
+			<string>17</string> 
+			<string>18</string> 
+			<string>19</string> 
+			<string>16</string> 
+			<string>17</string> 
+		</question> 
+		<question> 
+			<string>10+8</string> 
+			<string>10 + 8</string> 
+			<string>18</string> 
+			<string>19</string> 
+			<string>20</string> 
+			<string>17</string> 
+			<string>18</string> 
+		</question> 
+		<question> 
+			<string>10+9</string> 
+			<string>10 + 9</string> 
+			<string>19</string> 
+			<string>20</string> 
+			<string>21</string> 
+			<string>18</string> 
+			<string>19</string> 
+		</question> 
+		<question> 
+			<string>10+10</string> 
+			<string>10 + 10</string> 
+			<string>20</string> 
+			<string>21</string> 
+			<string>22</string> 
+			<string>19</string> 
+			<string>20</string> 
+		</question> 
+		<question> 
+			<string>10+11</string> 
+			<string>10 + 11</string> 
+			<string>21</string> 
+			<string>22</string> 
+			<string>23</string> 
+			<string>20</string> 
+			<string>21</string> 
+		</question> 
+		<question> 
+			<string>10+12</string> 
+			<string>10 + 12</string> 
+			<string>22</string> 
+			<string>23</string> 
+			<string>24</string> 
+			<string>21</string> 
+			<string>22</string> 
+		</question> 
+		<question> 
+			<string>11+0</string> 
+			<string>11 + 0</string> 
+			<string>11</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>10</string> 
+			<string>11</string> 
+		</question> 
+		<question> 
+			<string>11+1</string> 
+			<string>11 + 1</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>11</string> 
+			<string>12</string> 
+		</question> 
+		<question> 
+			<string>11+2</string> 
+			<string>11 + 2</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>12</string> 
+			<string>13</string> 
+		</question> 
+		<question> 
+			<string>11+3</string> 
+			<string>11 + 3</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>13</string> 
+			<string>14</string> 
+		</question> 
+		<question> 
+			<string>11+4</string> 
+			<string>11 + 4</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>14</string> 
+			<string>15</string> 
+		</question> 
+		<question> 
+			<string>11+5</string> 
+			<string>11 + 5</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>18</string> 
+			<string>15</string> 
+			<string>16</string> 
+		</question> 
+		<question> 
+			<string>11+6</string> 
+			<string>11 + 6</string> 
+			<string>17</string> 
+			<string>18</string> 
+			<string>19</string> 
+			<string>16</string> 
+			<string>17</string> 
+		</question> 
+		<question> 
+			<string>11+7</string> 
+			<string>11 + 7</string> 
+			<string>18</string> 
+			<string>19</string> 
+			<string>20</string> 
+			<string>17</string> 
+			<string>18</string> 
+		</question> 
+		<question> 
+			<string>11+8</string> 
+			<string>11 + 8</string> 
+			<string>19</string> 
+			<string>20</string> 
+			<string>21</string> 
+			<string>18</string> 
+			<string>19</string> 
+		</question> 
+		<question> 
+			<string>11+9</string> 
+			<string>11 + 9</string> 
+			<string>20</string> 
+			<string>21</string> 
+			<string>22</string> 
+			<string>19</string> 
+			<string>20</string> 
+		</question> 
+		<question> 
+			<string>11+10</string> 
+			<string>11 + 10</string> 
+			<string>21</string> 
+			<string>22</string> 
+			<string>23</string> 
+			<string>20</string> 
+			<string>21</string> 
+		</question> 
+		<question> 
+			<string>11+11</string> 
+			<string>11 + 11</string> 
+			<string>22</string> 
+			<string>23</string> 
+			<string>24</string> 
+			<string>21</string> 
+			<string>22</string> 
+		</question> 
+		<question> 
+			<string>11+12</string> 
+			<string>11 + 12</string> 
+			<string>23</string> 
+			<string>24</string> 
+			<string>25</string> 
+			<string>22</string> 
+			<string>23</string> 
+		</question> 
+		<question> 
+			<string>12+0</string> 
+			<string>12 + 0</string> 
+			<string>12</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>11</string> 
+			<string>12</string> 
+		</question> 
+		<question> 
+			<string>12+1</string> 
+			<string>12 + 1</string> 
+			<string>13</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>12</string> 
+			<string>13</string> 
+		</question> 
+		<question> 
+			<string>12+2</string> 
+			<string>12 + 2</string> 
+			<string>14</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>13</string> 
+			<string>14</string> 
+		</question> 
+		<question> 
+			<string>12+3</string> 
+			<string>12 + 3</string> 
+			<string>15</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>14</string> 
+			<string>15</string> 
+		</question> 
+		<question> 
+			<string>12+4</string> 
+			<string>12 + 4</string> 
+			<string>16</string> 
+			<string>17</string> 
+			<string>18</string> 
+			<string>15</string> 
+			<string>16</string> 
+		</question> 
+		<question> 
+			<string>12+5</string> 
+			<string>12 + 5</string> 
+			<string>17</string> 
+			<string>18</string> 
+			<string>19</string> 
+			<string>16</string> 
+			<string>17</string> 
+		</question> 
+		<question> 
+			<string>12+6</string> 
+			<string>12 + 6</string> 
+			<string>18</string> 
+			<string>19</string> 
+			<string>20</string> 
+			<string>17</string> 
+			<string>18</string> 
+		</question> 
+		<question> 
+			<string>12+7</string> 
+			<string>12 + 7</string> 
+			<string>19</string> 
+			<string>20</string> 
+			<string>21</string> 
+			<string>18</string> 
+			<string>19</string> 
+		</question> 
+		<question> 
+			<string>12+8</string> 
+			<string>12 + 8</string> 
+			<string>20</string> 
+			<string>21</string> 
+			<string>22</string> 
+			<string>19</string> 
+			<string>20</string> 
+		</question> 
+		<question> 
+			<string>12+9</string> 
+			<string>12 + 9</string> 
+			<string>21</string> 
+			<string>22</string> 
+			<string>23</string> 
+			<string>20</string> 
+			<string>21</string> 
+		</question> 
+		<question> 
+			<string>12+10</string> 
+			<string>12 + 10</string> 
+			<string>22</string> 
+			<string>23</string> 
+			<string>24</string> 
+			<string>21</string> 
+			<string>22</string> 
+		</question> 
+		<question> 
+			<string>12+11</string> 
+			<string>12 + 11</string> 
+			<string>23</string> 
+			<string>24</string> 
+			<string>25</string> 
+			<string>22</string> 
+			<string>23</string> 
+		</question> 
+		<question> 
+			<string>12+12</string> 
+			<string>12 + 12</string> 
+			<string>24</string> 
+			<string>25</string> 
+			<string>26</string> 
+			<string>23</string> 
+			<string>24</string> 
+		</question> 
+	</questions> 
+</addition>
