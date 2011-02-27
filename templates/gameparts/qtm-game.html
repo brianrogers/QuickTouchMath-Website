@@ -6,211 +6,32 @@
 	<meta name="author" content="Brian Rogers">
 	<!-- Date: 2011-02-14 -->
 	<script src="../../scripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/qtm.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" href="../../style/qtm-game.css" type="text/css" media="screen" charset="utf-8">
 	<script>
-	
-	var quizTime = 60;
-	
-	var counter = quizTime;
-	var questions = [];
-	var wrongQuestions = [];
-	var currentQuestion = null;
-	var score = 0;
-	var gametype = 'add';
-	
-	function timerStep(){
-		counter--;
-		if(counter==0)
-		{
-			//game over
-			$('#timer').text(counter);
-			gameOver();	
-			
-		}else{
-			//update timer
-			$('#timer').text(counter);
-		}
-	}
-	
-	function gameOver()
-	{
-		clearInterval(timer);
-		$('#gameframe').hide();
-		$('#gameover').show();
-		missedString = "<br>";
-		for(i=0;i<wrongQuestions.length-1;i++)
-		{
-			missedString += wrongQuestions[i][1] + ' = ' + wrongQuestions[i][2] + "<br>";
-		}
-		$('#gameover-msg').html('Good Job!<br>You got ' + score + ' correct!<br><br>You missed ' + missedString + "");
-		
-		//save score
-		$.ajax({
-	            type: "POST",
-	            url: "/actions/savescore",
-				data: "playername="+'{{player}}'+"&score="+score+"&type="+gametype,
-	            //dataType: ($.browser.msie) ? "text/xml" : "xml",
-	            success: function(xml) {
-					//alert('LOADED : ' + xml);
-					//console.log('savescore : ' + $(xml).text());
-					
-	            },
-				error: function(err1,err2,err3,err4) {
-					//console.log('false');
-					//console.log('error : ' + err1 + ' *** ' + err2 + ' *** ' + err3 + ' *** ' + err4);
-				}
-	        });
-	}
-	
-	function submitAnswer(buttonClicked)
-	{
-		//console.log('buttonClicked: ' + buttonClicked);
-		//console.log('correctAnswer: ' + currentQuestion[6] );
-		if(buttonClicked == currentQuestion[6])
-		{
-			//correct answer
-			//console.log('correct');
-			score++;
-			$('#score').text(score);
-		}else{
-			//incorrect answer
-			wrongQuestions.push(currentQuestion);
-		}
-		
-		loadRandomQuestion();
-	}
-	
-	function parseXml(xml)
-	{
-		//console.log('parseXml');
-		//loop through questions
-		$(xml).find("question").each(function()
-		{
-    		//$("#output").append($(this).attr("author") + "<br />");
-			var question = [];
-			$(this).find("string").each(function()
-			{
-			question.push($(this).text());
-			////console.log('added item : ' + $(this).text());
-			})
-			questions.push(question);
-			//console.log('added question');
-		});
-		
-		loadRandomQuestion();
-	}
-	
-	function resetGame(gameType){
-		
-		gametype = gameType;
-		
-		$('#getready').show();
-		$('#gamemenu').hide();
-		$('#gameover').hide();
-		$('#gameframe').hide();
-		score = 0;
-		counter = quizTime;
-		$('#score').text(score);
-		$('#timer').text(counter);
-		
-		//console.log(gameType);
-		
-		questionFile = '';
-		switch(gameType){
-			case 'add':
-				questionFile = '/questions/addition.xml';
-				break;
-			case 'sub':
-				questionFile = '/questions/subtraction.xml';
-				break;
-			case 'mul':
-				questionFile = '/questions/multiplication.xml';
-				break;
-			case 'div':
-				questionFile = '/questions/division.xml';
-				break;
-			default:
-				questionFile = '/questions/addition.xml';
-				break;
-		}
-		//console.log(questionFile);
-		//load the plist xml file
-		$.ajax({
-		            type: "GET",
-		            url: questionFile,
-		            dataType: ($.browser.msie) ? "text/xml" : "xml",
-		            success: function(xml) {
-						//alert('LOADED : ' + xml);
-						parseXml(xml);
-		            },
-					error: function(err) {
-						alert('error : ');
-					}
-		        });
-	}
-	
-	function startGame(){
-		//load up the first question
-		loadRandomQuestion();
-		$('#getready').hide();
-		$('#gameframe').show();
-		//now start the timer
-		var timer = window.setInterval(function(){
-			timerStep();
-		},1000);
-	}
-	
-	function loadRandomQuestion(){
-		
-		currentQuestion = questions[Math.floor(Math.random()*questions.length)];
-		
-		//populate the question
-		$('#questionText').text(currentQuestion[1]);
-		//need to randomize these selections
-		
-		answers = [currentQuestion[2],currentQuestion[3],currentQuestion[4],currentQuestion[5]];
-		shuffle(answers);
-		$('#button1').text(answers[0]);
-		$('#button2').text(answers[1]);
-		$('#button3').text(answers[2]);
-		$('#button4').text(answers[3]);
-	}
-	
-	function showMenu(){
+	function showMenu() {
 		$('#gamemenu').show();
 		$('#gameover').hide();
 		$('#gameframe').hide();
 		$('#getready').hide();
 	}
 	
-	function shuffle ( myArray ) {
-	  var i = myArray.length;
-	  if ( i == 0 ) return false;
-	  while ( --i ) {
-	     var j = Math.floor( Math.random() * ( i + 1 ) );
-	     var tempi = myArray[i];
-	     var tempj = myArray[j];
-	     myArray[i] = tempj;
-	     myArray[j] = tempi;
-	   }
-	}
-	
 	$(document).ready(function(){
 		//startup jquery stuff
-		$('#button1').click(function(){submitAnswer($(this).text())});
-		$('#button2').click(function(){submitAnswer($(this).text())});
-		$('#button3').click(function(){submitAnswer($(this).text())});
-		$('#button4').click(function(){submitAnswer($(this).text())});
+		$('#button1').click(function(){qtm.submitAnswer($(this).text());});
+		$('#button2').click(function(){qtm.submitAnswer($(this).text());});
+		$('#button3').click(function(){qtm.submitAnswer($(this).text());});
+		$('#button4').click(function(){qtm.submitAnswer($(this).text());});
 		
-		$('#btnAdd').click(function(){resetGame('add')});
-		$('#btnSub').click(function(){resetGame('sub')});
-		$('#btnMul').click(function(){resetGame('mul')});
-		$('#btnDiv').click(function(){resetGame('div')});
+		$('#btnAdd').click(function(){qtm.resetGame('add');});
+		$('#btnSub').click(function(){qtm.resetGame('sub');});
+		$('#btnMul').click(function(){qtm.resetGame('mul');});
+		$('#btnDiv').click(function(){qtm.resetGame('div');});
 		
-		$('#getready').click(function(){startGame()});
+		$('#getready').click(function(){qtm.startGame();});
 		
 		//$('#gameover').click(function(){window.document.location = window.document.location});
-		$('#gameoverbutton').click(function(){window.document.location = window.document.location});
+		$('#gameoverbutton').click(function(){window.document.location = window.document.location;});
 		
 		$('#backbutton').click(function(){
 			window.document.location = "/play";
@@ -220,10 +41,16 @@
 			showMenu();
 		});
 		
+		//playerName = "{{player}}";
+		
 		showMenu();
+		
+		
 		
 	});
 	
+	qtm = mcquiz;
+	qtm.playerName = "{{player}}";
 	window.scrollTo(0, 44);
 
 	</script>
