@@ -6,9 +6,10 @@
 	<meta name="author" content="Brian Rogers">
 	<!-- Date: 2011-02-14 -->
 	<script src="../../scripts/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script src="../../scripts/qtm.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../../scripts/mcquiz.js" type="text/javascript" charset="utf-8"></script>
 	<link rel="stylesheet" href="../../style/qtm-game.css" type="text/css" media="screen" charset="utf-8">
 	<script>
+	
 	function showMenu() {
 		$('#gamemenu').show();
 		$('#gameover').hide();
@@ -45,12 +46,46 @@
 		
 		showMenu();
 		
-		
-		
 	});
 	
-	qtm = mcquiz;
+	var qtm = new mcquiz();
+	
 	qtm.playerName = "{{player}}";
+	
+	qtm.updateStartGameUI = function() {
+		$('#getready').hide();
+		$('#gameframe').show();
+	}
+	
+	qtm.updateTimerUI = function(counter) {
+		$('#timer').text(counter);
+	};
+	
+	qtm.updateQuestionUI = function(text,answers) {
+		$('#questionText').text(text);
+		$('#button1').text(answers[0]);
+		$('#button2').text(answers[1]);
+		$('#button3').text(answers[2]);
+		$('#button4').text(answers[3]);
+	}
+	
+	qtm.updateGameOverUI = function(message) {
+		$('#gameframe').hide();
+		$('#gameover').show();
+		$('#gameover-msg').html(message);
+	}
+	
+	qtm.updateScoreUI = function(score) {
+		$('#score').text(score);
+	}
+	
+	qtm.updateResetGaneUI = function() {
+		$('#getready').show();
+		$('#gamemenu').hide();
+		$('#gameover').hide();
+		$('#gameframe').hide();
+	}
+	
 	window.scrollTo(0, 44);
 
 	</script>
