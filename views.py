@@ -126,12 +126,20 @@ class PlayGame(webapp.RequestHandler):
 				for s in allscores:
 					if(s.gametype == 'add'):
 						add_score = s.highscore
+						s.topscore = int(s.highscore)
+						s.put()
 					if(s.gametype == 'sub'):
 						sub_score = s.highscore
+						s.topscore = int(s.highscore)
+						s.put()
 					if(s.gametype == 'mul'):
 						mul_score = s.highscore
+						s.topscore = int(s.highscore)
+						s.put()
 					if(s.gametype == 'div'):
 						div_score = s.highscore
+						s.topscore = int(s.highscore)
+						s.put()
 			
 		template_values = {'player':playername
 							,'add_score':add_score
@@ -141,7 +149,6 @@ class PlayGame(webapp.RequestHandler):
 							}
 
 		path = os.path.join(os.path.dirname(__file__),'templates/gameparts/qtm-game.html')
-		logging.info(path)
 		self.response.out.write(template.render(path,template_values))
 		
 class SavePlayerScore(webapp.RequestHandler):
@@ -164,5 +171,39 @@ class SavePlayerScore(webapp.RequestHandler):
 				if(int(s.highscore) < int(playerscore)):
 					logging.info('saving new score')
 					s.highscore = playerscore
+					s.topscore = int(playerscore)
 					s.put()
 				
+class TopScores(webapp.RequestHandler):
+	def get(self,gametype):
+		#gametype = self.request.get('type')
+		if gametype == 'add':
+			longgametype = 'Addition'
+		if gametype == 'sub':
+			longgametype = 'Subtraction' 
+		if gametype == 'mul':
+			longgametype = 'Multiplication'
+		if gametype == 'div':
+			longgametype = 'Division'
+		
+		scorelist = "";
+		#get the scores
+		#scores = PlayerScore.all()
+		#scores.filter('gametype = ', gametype)
+		#scores.order('highscore')
+		q = db.GqlQuery("SELECT * FROM PlayerScore " +
+		                "WHERE gametype = :1 " +
+		                "ORDER BY topscore DESC",
+		                gametype)
+		results = q.fetch(20)
+		for s in results:
+			logging.info(s.highscore)
+			logging.info(s.playername)
+			scorelist += s.highscore + ' - ' + s.playername + '<br>'
+			
+		template_values = {'scorelist':scorelist,
+							'gametype':gametype,
+							'longgametype':longgametype}
+
+		path = os.path.join(os.path.dirname(__file__),'templates/gameparts/highscores.html')
+		self.response.out.write(template.render(path,template_values))

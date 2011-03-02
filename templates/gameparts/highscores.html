@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>qtm - high scores</title>
+	<meta name = "viewport" content = "width = device-width">
+	<meta name="author" content="Brian Rogers">
+	<!-- Date: 2011-02-14 -->
+	<script src="../../scripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="../../style/qtm-game.css" type="text/css" media="screen" charset="utf-8">
+	<script>
+	$(document).ready(function(){
+		//startup jquery stuff
+		$('#back').click(function(){
+			window.location = '/playgame/';
+		});
+	});
+	</script>
+</head>
+<body>
+<div id="highscores">
+	<div id="banner">Quick Touch Math<br>Top Scores</div>
+	<div id="gametype">{{longgametype}}</div>
+	<div id="scorelist">{{scorelist}}</div>
+</div>
+</body>
+</html>

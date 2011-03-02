@@ -10,6 +10,10 @@
 	<link rel="stylesheet" href="../../style/qtm-game.css" type="text/css" media="screen" charset="utf-8">
 	<script>
 	
+	var qtm = new mcquiz();
+	
+	qtm.playerName = "{{player}}";
+	
 	function showMenu() {
 		$('#gamemenu').show();
 		$('#gameover').hide();
@@ -48,14 +52,12 @@
 		
 	});
 	
-	var qtm = new mcquiz();
-	
-	qtm.playerName = "{{player}}";
+
 	
 	qtm.updateStartGameUI = function() {
 		$('#getready').hide();
 		$('#gameframe').show();
-	}
+	};
 	
 	qtm.updateTimerUI = function(counter) {
 		$('#timer').text(counter);
@@ -67,24 +69,24 @@
 		$('#button2').text(answers[1]);
 		$('#button3').text(answers[2]);
 		$('#button4').text(answers[3]);
-	}
+	};
 	
 	qtm.updateGameOverUI = function(message) {
 		$('#gameframe').hide();
 		$('#gameover').show();
 		$('#gameover-msg').html(message);
-	}
+	};
 	
 	qtm.updateScoreUI = function(score) {
 		$('#score').text(score);
-	}
+	};
 	
-	qtm.updateResetGaneUI = function() {
+	qtm.updateResetGameUI = function() {
 		$('#getready').show();
 		$('#gamemenu').hide();
 		$('#gameover').hide();
 		$('#gameframe').hide();
-	}
+	};
 	
 	window.scrollTo(0, 44);
 

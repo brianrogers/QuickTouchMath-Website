@@ -35,16 +35,11 @@ var mcquiz = function(){
 		$.ajax({
 	            type: "POST",
 	            url: "/actions/savescore",
-				data: "playername="+ this.playerName +"&score="+this.score+"&type="+this.gametype,
+				data: "playername="+ thisClass.playerName +"&score="+thisClass.score+"&type="+thisClass.gametype,
 	            //dataType: ($.browser.msie) ? "text/xml" : "xml",
 	            success: function(xml) {
-					//alert('LOADED : ' + xml);
-					//console.log('savescore : ' + $(xml).text());
-
 	            },
 				error: function(err1,err2,err3,err4) {
-					//console.log('false');
-					//console.log('error : ' + err1 + ' *** ' + err2 + ' *** ' + err3 + ' *** ' + err4);
 				}
 	        });
 	};
@@ -77,12 +72,12 @@ var mcquiz = function(){
 		}
 	};
 	
-	this.updateResetGameUI = function(){};
-	this.updateStartGameUI = function(){};
-	this.updateGameOverUI = function(message){};
-	this.updateTimerUI = function(counter){};
-	this.updateQuestionUI = function(text,answers){};
-	this.updateScoreUI = function(score){};
+	mcquiz.prototype.updateResetGameUI = function(){};
+	mcquiz.prototype.updateStartGameUI = function(){};
+	mcquiz.prototype.updateGameOverUI = function(message){};
+	mcquiz.prototype.updateTimerUI = function(counter){};
+	mcquiz.prototype.updateQuestionUI = function(text,answers){};
+	mcquiz.prototype.updateScoreUI = function(score){};
 	this.shuffle = function(ArrayToSuffle){
 		var i = ArrayToSuffle.length;
 	  	if ( i === 0 ) {
@@ -139,7 +134,7 @@ var mcquiz = function(){
 	};
 	
 	this.resetGame = function(gameType) {
-		gametype = gameType;
+		this.gametype = gameType;
 
 		this.score = 0;
 		this.counter = this.quizTime;
@@ -149,7 +144,7 @@ var mcquiz = function(){
 		this.updateTimerUI(this.counter);
 
 		var questionFile = '';
-		switch(gameType){
+		switch(this.gametype){
 			case 'add':
 				questionFile = '/questions/addition.xml';
 				break;
@@ -186,15 +181,16 @@ var mcquiz = function(){
 	};
 	
 	this.startGame = function() {
+		thisClass = this;
 		this.askQuestion();
 		this.updateStartGameUI();
 		//now start the timer
 		this.timer = window.setInterval(function(){
-			this.timerStep();
+			thisClass.timerStep();
 		},1000);
 	};
 	
 	this.logError = function(err) {
-		jstestdriver.console.log('error : '+err);
+		console.log('error : '+err);
 	};	
 };

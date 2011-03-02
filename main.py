@@ -26,6 +26,7 @@ class MainHandler(webapp.RequestHandler):
 application = webapp.WSGIApplication([
 									('/', MainHandler),
 									('/play', SignInForm),
+									('/topscores/(.*)', TopScores),
 									('/actions/signin', SignInAction),
 									('/actions/newplayer', NewPlayerAction),
 									('/actions/checkplayer', CheckPlayerAction),

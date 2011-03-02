@@ -3,7 +3,13 @@ TestCase("McquizTests", {
 		var qtm = new mcquiz();
 		qtm.parseXml(getAdditionQuestions());
 		assertEquals("testStartUp",3,qtm.questions.length);
-    }
+    },
+	testAddQuestion:function() {
+		var question = ["id","question_text","correct_answer","distractor1","distractor2","distractor3"];
+		var qtm = new mcquiz();
+		qtm.addQuestion(question);
+		assertEquals("testStartUp",1,qtm.questions.length);
+	}
   });
 
 
