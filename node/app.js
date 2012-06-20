@@ -18,6 +18,10 @@ app.configure(function(){
   app.use(require('stylus').middleware({ src: __dirname + '/public' }));
   app.use(app.router);
   app.use(express.static(__dirname + '/public'));
+  app.use("/scripts", express.static(__dirname + '/scripts'));
+  app.use("/style", express.static(__dirname + '/style'));
+  app.use("/images", express.static(__dirname + '/images'));
+  app.use("/questions", express.static(__dirname + '/questions'));
 });
 
 app.configure('development', function(){
