@@ -1,0 +1,21 @@
+script(src='/scripts/signin.js', type='text/javascript', charset='utf-8')
+
+#signinform
+    #qtmbutton
+    #signinsplash
+        #gotosignin
+          | I have a PlayerName
+          br
+          | and Password
+        #gotonewplayer
+          | I have never played online
+          br
+          | (or forgot my password)
+    #signinentry
+      #playerlabel Player Name:
+      input#playername(type='text', value='')
+      br
+      #passwordlabel Password:
+      input#password(type='password', value='')
+      #signinbutton Sign In
+      #newplayerbutton New Player

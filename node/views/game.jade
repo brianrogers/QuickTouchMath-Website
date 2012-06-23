@@ -1,3 +1,64 @@
+script
+  var qtm = new mcquiz();
+  qtm.playerName = "#{player}";
+  function showMenu() {
+  $('#gamemenu').show();
+  $('#gameover').hide();
+  $('#gameframe').hide();
+  $('#getready').hide();
+  }
+  $(document).ready(function(){
+  //startup jquery stuff
+  $('#button1').click(function(){qtm.submitAnswer($(this).text());});
+  $('#button2').click(function(){qtm.submitAnswer($(this).text());});
+  $('#button3').click(function(){qtm.submitAnswer($(this).text());});
+  $('#button4').click(function(){qtm.submitAnswer($(this).text());});
+  $('#btnAdd').click(function(){qtm.resetGame('add');});
+  $('#btnSub').click(function(){qtm.resetGame('sub');});
+  $('#btnMul').click(function(){qtm.resetGame('mul');});
+  $('#btnDiv').click(function(){qtm.resetGame('div');});
+  $('#getready').click(function(){qtm.startGame();});
+  //$('#gameover').click(function(){window.document.location = window.document.location});
+  $('#gameoverbutton').click(function(){window.document.location = window.document.location;});
+  $('#backbutton').click(function(){
+  window.document.location = "/play";
+  });
+  $('#quitbutton').click(function(){
+  showMenu();
+  });
+  //playerName = "#{player}";
+  showMenu();
+  });
+  qtm.updateStartGameUI = function() {
+  $('#getready').hide();
+  $('#gameframe').show();
+  };
+  qtm.updateTimerUI = function(counter) {
+  $('#timer').text(counter);
+  };
+  qtm.updateQuestionUI = function(text,answers) {
+  $('#questionText').text(text);
+  $('#button1').text(answers[0]);
+  $('#button2').text(answers[1]);
+  $('#button3').text(answers[2]);
+  $('#button4').text(answers[3]);
+  };
+  qtm.updateGameOverUI = function(message) {
+  $('#gameframe').hide();
+  $('#gameover').show();
+  $('#gameover-msg').html(message);
+  };
+  qtm.updateScoreUI = function(score) {
+  $('#score').text(score);
+  };
+  qtm.updateResetGameUI = function() {
+  $('#getready').show();
+  $('#gamemenu').hide();
+  $('#gameover').hide();
+  $('#gameframe').hide();
+  };
+  window.scrollTo(0, 44);
+
 #gamemenu
     #backbutton Back
     #player #{player}

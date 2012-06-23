@@ -30,12 +30,14 @@ var mcquiz = function(){
 	};
 	
 	this.saveScoreToServer = function() {
+
 		var thisClass = this;
+		console.log('saving player='+ thisClass.playerName + '&score=' +thisClass.score+'&game='+thisClass.gametype);
 		//save score
 		$.ajax({
 	            type: "POST",
-	            url: "/actions/savescore",
-				data: "playername="+ thisClass.playerName +"&score="+thisClass.score+"&type="+thisClass.gametype,
+	            url: "/savescore",
+				data: "player="+ thisClass.playerName +"&score="+thisClass.score+"&game="+thisClass.gametype,
 	            //dataType: ($.browser.msie) ? "text/xml" : "xml",
 	            success: function(xml) {
 	            },
