@@ -16,7 +16,7 @@ $(document).ready(function() {
 				data: "playername=" + $("#playername").val() + "&password=" + $("#password").val(),
 				//dataType: ($.browser.msie) ? "text/xml" : "xml",
 				success: function(xml) {
-					alert('LOADED : ' + xml);
+					//alert('LOADED : ' + xml);
 					//console.log($(xml).text());
 					if ($(xml).text() == 'False') {
 						//console.log('returned false');
